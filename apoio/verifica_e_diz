@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Verifica se o número de argumentos é válido
+if [ "$#" -ne 2 ]; then
+    echo "Uso: $0 mapa solucao"
+    exit 1
+fi
+
+# Chama o script "verifica" com os arquivos passados como argumentos
+cat "$1" "$2" | ./verifica
+
+# Verifica o código de saída do script "verifica" e imprime uma mensagem correspondente
+if [ "$?" -eq 0 ]; then
+    echo "SUCESSO"
+else
+    echo "FAIL"
+fi

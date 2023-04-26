@@ -1,0 +1,3 @@
+ descrição detalhada da estratégia
+      implementada e outras informações que considerar relevantes
+      para a avaliação do trabalho
